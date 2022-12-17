@@ -1,5 +1,6 @@
 const express=require('express');
 const app=express();
+const config=require('./config')
 
 const bodyParser=require('body-parser');
 const mysql=require('mysql2');
@@ -9,7 +10,7 @@ const cors=require('cors');
 const db=mysql.createPool({
     host:"localhost",
     user:"root",
-    password:"Aazim20800",
+    password:"****",//enter password here
     database:"contactDb"
 });
 
